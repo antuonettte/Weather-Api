@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./static/css/main.css" />
+    
+    <title>Weather for you</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="row mt-5">
+            <div class="col-md-6 offset-3 d-flex justify-content-center">
+                <form id="genWeather" class="form-inline">
+                    <div class="form-group">
+                        <input type="text" id="city" name="city" required="required" class="roundBorder form-control form-control-lg mr-3" placeholder="Enter a city" />
+                        <input type="text" id="state" name="state" required="required" class="roundBorder form-control form-control-lg mr-3" placeholder="Enter a state" />
+                        <input type="submit" class="roundBorder btn btn-info form-control-lg ml-3" />
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6 offset-3 text-center roundBorder-5 mt-5">
+                <h1 id="resultLocation" class="mb-5 text-white"></h1>
+
+                <div class="card text-black  mb-3 mx-auto" style="max-width: 18rem;">
+                    <div class="card-header h4 text-white text-left bg-danger">High</div>
+                    <div class="card-body">
+                        <p id="high" class="h6"></p>
+                    </div>
+                </div>
+
+                <div class="card text-black  mb-3 mx-auto" style="max-width: 18rem;">
+                    <div class="card-header h4 text-white text-left bg-primary">Low</div>
+                    <div class="card-body">
+                        <p id="low" class="h6"></p>
+                    </div>
+                </div>
+
+                <div class="card text-black  mb-3 mx-auto" style="max-width: 18rem;">
+                    <div class="card-header h4 text-white text-left bg-info">Forecast</div>
+                    <div class="card-body">
+                        <p id="forecast" class="h6"></p>
+                    </div>
+                </div>
+
+                <div class="card text-black  mb-3 mx-auto" style="max-width: 18rem;">
+                    <div class="card-header h4 text-white text-left bg-success">Humidity</div>
+                    <div class="card-body">
+                        <p id="humidity" class="h6"></p>
+                    </div>
+                </div>
+
+            </div>
+    </main>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- My Scripts -->
+    <script src="./static/js/main.js"></script>
+</body>
+
+</html>

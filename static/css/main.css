@@ -1,0 +1,16 @@
+.test {
+    background-color: lightgray;
+}
+
+.roundBorder {
+    border-radius: 30px;
+}
+
+.roundBorder-5 {
+    border-radius: 100px;
+}
+
+body{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
